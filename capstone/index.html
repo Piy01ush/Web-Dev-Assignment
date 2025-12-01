@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Foodie - Order Food Online</title>
+
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="nav-left">
+        <div class="brand">
+          <span class="brand-icon">🥗</span>
+          <span class="brand-name">The Foodie</span>
+        </div>
+
+        <nav class="nav-links">
+          <a href="#categories">Categories</a>
+          <a href="#restaurants">Restaurants</a>
+          <a href="#offers">Offers</a>
+          <a href="#testimonials">Reviews</a>
+          <a href="#app">App</a>
+        </nav>
+      </div>
+
+      <div class="nav-right">
+        <button class="btn btn-ghost">Log in</button>
+        <button class="btn btn-accent">Sign up</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <span class="pill pill-soft">
+            ⏱ Under 30 min delivery in your area
+          </span>
+          <h1>Your favorite food, delivered fresh at your doorstep.</h1>
+          <p>
+            Discover local favorites and top-rated kitchens. Real-time tracking,
+            safe packaging, and zero-contact delivery made simple.
+          </p>
+
+          <!-- SEARCH BAR -->
+          <form class="search">
+            <div class="search-field">
+              <label for="hero-location">Delivery location</label>
+              <input
+                id="hero-location"
+                type="text"
+                placeholder="Enter area, street, or city"
+                required
+              />
+            </div>
+
+            <div class="search-field">
+              <label for="hero-type">I'm craving</label>
+              <select id="hero-type">
+                <option>Anything</option>
+                <option>Pizza</option>
+                <option>Burgers</option>
+                <option>Indian</option>
+                <option>Chinese</option>
+                <option>Desserts</option>
+              </select>
+            </div>
+
+            <button class="btn btn-primary" type="submit">
+              Find Restaurants
+            </button>
+          </form>
+
+          <div class="hero-meta">
+            <div>
+              <h3>4.9★</h3>
+              <p>Average app rating</p>
+            </div>
+            <div>
+              <h3>1,200+</h3>
+              <p>Partner restaurants</p>
+            </div>
+            <div>
+              <h3>2M+</h3>
+              <p>Orders delivered</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card hero-card-main">
+            <img
+              src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80"
+              alt="Fresh pizza"
+            />
+            <div class="hero-card-overlay">
+              <h3>Tonight’s Special</h3>
+              <p>Cheesy Farmhouse Pizza</p>
+              <span>🔥 25% OFF</span>
+            </div>
+          </div>
+
+          <div class="hero-stacked">
+            <div class="hero-card hero-card-small">
+              <img
+                src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
+                alt="Burgers"
+              />
+              <div class="hero-card-label">Burgers</div>
+            </div>
+            <div class="hero-card hero-card-small">
+              <img
+                src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80"
+                alt="Healthy food"
+              />
+              <div class="hero-card-label">Healthy Bowls</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="section" id="categories">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <h2>Explore by category</h2>
+            <p>Choose a category and we’ll show you nearby options.</p>
+          </div>
+          <button class="btn btn-light">View all</button>
+        </header>
+
+        <div class="grid grid-categories">
+          <article class="cat-card">
+            <div class="cat-icon">🍕</div>
+            <h3>Pizza</h3>
+            <p>Cheesy, loaded, thin crust, and more.</p>
+          </article>
+
+          <article class="cat-card">
+            <div class="cat-icon">🍔</div>
+            <h3>Burgers</h3>
+            <p>Stacked patties & juicy chicken burgers.</p>
+          </article>
+
+          <article class="cat-card">
+            <div class="cat-icon">🍜</div>
+            <h3>Asian</h3>
+            <p>Noodles, ramen, momos, and more.</p>
+          </article>
+
+          <article class="cat-card">
+            <div class="cat-icon">🍛</div>
+            <h3>Indian</h3>
+            <p>Biryanis, thalis, curries, and breads.</p>
+          </article>
+
+          <article class="cat-card">
+            <div class="cat-icon">🥗</div>
+            <h3>Healthy</h3>
+            <p>Salads, bowls, and low-cal options.</p>
+          </article>
+
+          <article class="cat-card">
+            <div class="cat-icon">🍰</div>
+            <h3>Desserts</h3>
+            <p>Cakes, brownies, ice-creams & more.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED RESTAURANTS -->
+    <section class="section" id="restaurants">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <h2>Featured restaurants</h2>
+            <p>Popular picks with top ratings near you.</p>
+          </div>
+          <div class="section-filters">
+            <button class="chip chip-active">All</button>
+            <button class="chip">Fast delivery</button>
+            <button class="chip">Best rated</button>
+          </div>
+        </header>
+
+        <div class="grid grid-restaurants">
+          <article class="rest-card">
+            <div class="rest-img">
+              <img
+                src="https://images.unsplash.com/photo-1421622548261-c45bfe178854?auto=format&fit=crop&w=900&q=80"
+                alt="Urban Slice"
+              />
+              <span class="rest-badge">30 min</span>
+            </div>
+            <div class="rest-body">
+              <h3>Urban Slice</h3>
+              <p>Pizza • Italian</p>
+              <div class="rest-meta">
+                <span>⭐ 4.7</span>
+                <span>₹₹</span>
+                <span>Free delivery</span>
+              </div>
+              <div class="rest-tags">
+                <span>Cheesy</span>
+                <span>Family favourite</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="rest-card">
+            <div class="rest-img">
+              <img
+                src="https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg?cs=srgb&dl=pexels-jonathanborba-2983101.jpg&fm=jpg"
+                alt="Smash Bros Burgers"
+              />
+              <span class="rest-badge">25 min</span>
+            </div>
+            <div class="rest-body">
+              <h3>Smash Bros Burgers</h3>
+              <p>Burgers • Fast Food</p>
+              <div class="rest-meta">
+                <span>⭐ 4.6</span>
+                <span>₹</span>
+                <span>Buy 1 Get 1</span>
+              </div>
+              <div class="rest-tags">
+                <span>Smash patties</span>
+                <span>Budget friendly</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="rest-card">
+            <div class="rest-img">
+              <img
+                src="https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=900&q=80"
+                alt="Spice Route"
+              />
+              <span class="rest-badge">35 min</span>
+            </div>
+            <div class="rest-body">
+              <h3>Spice Route</h3>
+              <p>Indian • North Indian</p>
+              <div class="rest-meta">
+                <span>⭐ 4.8</span>
+                <span>₹₹</span>
+                <span>Pure veg</span>
+              </div>
+              <div class="rest-tags">
+                <span>Home style</span>
+                <span>Family meals</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROMO OFFERS -->
+    <section class="section section-soft" id="offers">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <h2>Offers for you</h2>
+            <p>Apply these at checkout and save more.</p>
+          </div>
+        </header>
+
+        <div class="grid grid-offers">
+          <article class="offer">
+            <div class="offer-tag">New user</div>
+            <h3>Get 50% OFF up to ₹150</h3>
+            <p>Use code <strong>WELCOME50</strong> on your first 2 orders.</p>
+          </article>
+
+          <article class="offer offer-alt">
+            <div class="offer-tag">Weekend</div>
+            <h3>Flat ₹120 OFF on orders above ₹599</h3>
+            <p>Valid on Friday, Saturday, and Sunday evenings.</p>
+          </article>
+
+          <article class="offer offer-dark">
+            <div class="offer-tag">Super saver</div>
+            <h3>Free delivery on 5 orders</h3>
+            <p>Activate Foodie Plus subscription and save on every order.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <h2>What customers say</h2>
+            <p>Real people, honest reviews.</p>
+          </div>
+        </header>
